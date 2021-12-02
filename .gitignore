@@ -4,6 +4,7 @@
 composer.lock
 tmp.php
 phpunit.xml
+.phpunit.result.cache
 
 # IDE
 .project
