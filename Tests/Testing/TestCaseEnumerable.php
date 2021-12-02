@@ -6,7 +6,7 @@ use YaLinqo\Enumerable as E, YaLinqo\Functions;
 
 class TestCaseEnumerable extends \PHPUnit\Framework\TestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->setOutputCallback(function($str) { return str_replace("\r\n", "\n", $str); });
     }
