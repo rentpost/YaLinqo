@@ -6,11 +6,6 @@ use YaLinqo\Enumerable as E, YaLinqo\Functions;
 
 class TestCaseEnumerable extends \PHPUnit\Framework\TestCase
 {
-    protected function setUp(): void
-    {
-        $this->setOutputCallback(function($str) { return str_replace("\r\n", "\n", $str); });
-    }
-
     public function setExpectedException($exception, $message = null)
     {
         $this->expectException($exception);
